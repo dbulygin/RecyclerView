@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Telegram</string>
+    <string name="tab_all_chats">All Chats</string>
+    <string name="tab_work">Work</string>
+    <string name="tab_bots">Bots</string>
+    <string name="group_avatar_description">Group chat avatar</string>
+    <string name="person_avatar_description">Person chat avatar</string>
+    <string name="group_name">group_name?</string>
+    <string name="person_name">person_name?</string>
+    <string name="last_author">last_author?</string>
+    <string name="last_message">last_message?</string>
+    <string name="time_value">time_value?</string>
+    <string name="voip_badge_description">Voip badge</string>
+    <string name="verified_icon_description">Verified icon</string>
+    <string name="mute_icon_description">Mute icon</string>
+    <string name="pinned_icon_description">Pinned icon</string>
+    <string name="mention_icon_description">Mention icon</string>
+    <string name="checked_icon_description">Checked icon</string>
+    <string name="checkbox_badge_description">Checkbox badge</string>
+    <string name="locked_icon_description">Locked icon</string>
+    <string name="scam_patch_description">Scam patch</string>
+    <string name="read_icon_description">Scam patch</string>
+    <string name="unknown_view_type">Unknown view type</string>
+    <string name="fab_content_description">FAB description</string>
+    <string name="archive_text_for_icon">Archive</string>
 </resources>

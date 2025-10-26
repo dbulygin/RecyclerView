@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <com.google.android.material.appbar.AppBarLayout style="@style/appBarStyle">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/appBarStyle"
+            app:navigationIcon="@drawable/menu_19x13"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout style="@style/appTabLayoutStyle">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/appTabItemStyle"
+            android:text="@string/tab_all_chats" />
+        <com.google.android.material.tabs.TabItem
+            style="@style/appTabItemStyle"
+            android:text="@string/tab_work" />
+        <com.google.android.material.tabs.TabItem
+            style="@style/appTabItemStyle"
+            android:text="@string/tab_bots" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_description"
+            app:backgroundTint="?attr/colorChatBackground"
+            app:fabCustomSize="53dp"
+            app:srcCompat="@drawable/icon_pencil"
+            app:tint="?attr/colorPrimary" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

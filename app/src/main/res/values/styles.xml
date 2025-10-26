@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="appBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="elevation">0dp</item>
+        <item name="navigationIconTint">?attr/colorOnSurface</item>
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="appTabLayoutStyle" parent="Widget.Material3.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Material3.LabelLarge</item>
+        <item name="tabIndicatorHeight">4dp</item>
+    </style>
+
+    <style name="appTabItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="appChatAvatarContainerStyle">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="cardCornerRadius">58dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="appChatAvatarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="appChatVoipContainerStyle">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="cardCornerRadius">24dp</item>
+    </style>
+
+    <style name="appChatVoipStyle" parent="appChatAvatarStyle">
+        <item name="android:src">@drawable/voip_badge</item>
+    </style>
+
+    <style name="appChatCheckboxContainerStyle">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="appChatCheckboxStyle">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:src">@drawable/icon_checkbox</item>
+    </style>
+
+    <style name="appChatOnlineContainerStyle">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="appChatOnlineStyle">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:src">@drawable/circle_online</item>
+    </style>
+
+
+    <style name="appChatFirstLineStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginStart">11dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/colorChatFirstLine</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="appChatSecondLineStyle" parent="appChatFirstLineStyle">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/colorChatSecondLine</item>
+    </style>
+
+    <style name="appChatThirdLineStyle" parent="appChatFirstLineStyle">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textColor">?attr/colorChatThirdLine</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="appChatServiceStyle" parent="appChatFirstLineStyle">
+        <item name="android:layout_marginEnd">13dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorChatService</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="appChatCheckedIconStyle">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:paddingHorizontal">2dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:src">@drawable/icon_checked</item>
+    </style>
+
+    <style name="appChatVerifiedIconStyle">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginHorizontal">3dp</item>
+        <item name="android:src">@drawable/icon_verified</item>
+    </style>
+
+    <style name="appChatMuteIconStyle" parent="appChatVerifiedIconStyle">
+        <item name="android:src">@drawable/icon_mute</item>
+    </style>
+
+    <style name="appChatPreviewContainerStyle">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="cardCornerRadius">1.76dp</item>
+    </style>
+
+    <style name="appChatPreviewStyle" parent="appChatAvatarStyle" />
+
+    <style name="appChatCounterContainerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardBackgroundColor">?attr/colorChatCounter</item>
+    </style>
+
+    <style name="appChatCounterStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:text">0</item>
+    </style>
+
+    <style name="appChatPinnedIconStyle">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:src">@drawable/icon_pinned</item>
+    </style>
+
+    <style name="appChatMentionIconContainerStyle">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="cardCornerRadius">23dp</item>
+    </style>
+
+    <style name="appChatMentionIconStyle" parent="appChatAvatarStyle">
+        <item name="android:src">@drawable/icon_mention</item>
+        <item name="android:background">?attr/colorChatMention</item>
+    </style>
+
+    <style name="appChatDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="dividerInsetStart">68dp</item>
+        <item name="dividerColor">?attr/colorChatDivider</item>
+    </style>
+
+    <style name="appChatLockedIconStyle">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:paddingEnd">3dp</item>
+        <item name="android:paddingVertical">2dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:src">@drawable/icon_locked</item>
+    </style>
+
+    <style name="appChatPersonNameStyle" parent="appChatFirstLineStyle">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:paddingEnd">3dp</item>
+    </style>
+
+    <style name="appChatScamPatchStyle">
+        <item name="android:src">@drawable/fake_badge</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+    </style>
+
+    <style name="appChatReadIconStyle" parent="appChatCheckedIconStyle">
+        <item name="android:src">@drawable/icon_read</item>
+    </style>
+
+    <style name="appChatAvaterGuideline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

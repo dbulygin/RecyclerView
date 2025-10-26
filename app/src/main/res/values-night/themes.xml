@@ -1,16 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.RecyclerView" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <style name="Theme.RecyclerView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary_light</item>
+        <item name="colorSurface">@color/color_surface_light</item>
+        <item name="colorOnSurface">@color/color_on_surface_light</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_light</item>
+        <item name="colorChatFirstLine">@color/color_chat_first_line_light</item>
+        <item name="colorChatSecondLine">@color/color_chat_second_line_light</item>
+        <item name="colorChatThirdLine">@color/color_chat_third_line_light</item>
+        <item name="colorChatService">@color/color_chat_service_light</item>
+        <item name="colorChatMention">@color/color_chat_mention_light</item>
+        <item name="colorChatPinned">@color/color_chat_pinned_light</item>
+        <item name="colorChatCounter">@color/color_chat_counter_light</item>
+        <item name="colorChatDivider">@color/color_chat_divider_light</item>
+        <item name="colorChatOnline">@color/color_chat_online_light</item>
+        <item name="colorChatBackground">@color/color_chat_background_light</item>
+
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

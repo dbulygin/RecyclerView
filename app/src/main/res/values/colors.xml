@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary_light">#FFFFFFFF</color>
+    <color name="color_surface_light">#FF517DA2</color>
+    <color name="color_on_surface_light">#FFD5E8F7</color>
+    <color name="color_on_surface_variant_light">#FF8D8E90</color>
+    <color name="color_chat_first_line_light">#FF222222</color>
+    <color name="color_chat_second_line_light">#FF434449</color>
+    <color name="color_chat_third_line_light">#FF8D8E90</color>
+    <color name="color_chat_service_light">#FF95999A</color>
+    <color name="color_chat_mention_light">#FF3D95D4</color>
+    <color name="color_chat_pinned_light">#FF868686</color>
+    <color name="color_chat_counter_light">#FFC5C9CC</color>
+    <color name="color_chat_divider_light">#FFD9D9D9</color>
+    <color name="color_chat_online_light">#FF32A8E6</color>
+    <color name="color_chat_background_light">#FF51AEE7</color>
 </resources>
